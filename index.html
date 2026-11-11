@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PERHAPI Kalsel — Beranda</title>
+<meta name="description" content="PERHAPI Kalimantan Selatan: wadah profesional, akademisi, dan mahasiswa pertambangan untuk berbagi ilmu, menjaga keselamatan, dan mendorong tambang berkelanjutan.">
+<meta name="theme-color" content="#141518">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<div class="progress" id="progress"></div>
+
+<header id="hdr">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="PERHAPI Pengda Kalsel, ke beranda">
+      <span class="mark"><img src="assets/logo-perhapi.png" alt="Logo PERHAPI Kalsel"></span>
+      <span><b>PERHAPI</b><small>Pengda Kalsel</small></span>
+    </a>
+    <ul class="menu" id="menu">
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="struktur.html">Struktur</a></li>
+      <li><a href="#berita">Berita</a></li>
+      <li><a href="#agenda">Agenda</a></li>
+      <li><a href="#program">Program</a></li>
+      <li><a href="#gabung">Keanggotaan</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+    <a class="btn btn-accent" href="#gabung">Daftar anggota</a>
+    <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false" aria-controls="menu"><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- 1 · HERO (foto) -->
+  <section class="band hero">
+    <div class="bg" data-par="0.25"></div>
+    <div class="wrap hero-in">
+      <span class="eyebrow">Perhimpunan Ahli Pertambangan Indonesia</span>
+      <h1>Menghimpun ahli tambang Banua untuk <strong>tambang yang lebih baik.</strong></h1>
+      <p class="lead">Wadah profesional, akademisi, dan mahasiswa pertambangan di Kalimantan Selatan untuk berbagi ilmu, menjaga keselamatan, dan mendorong praktik tambang yang berkelanjutan.</p>
+      <div class="cta">
+        <a class="btn btn-accent" href="#gabung">Gabung PERHAPI Kalsel <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a class="btn btn-line" href="#berita">Lihat kegiatan</a>
+      </div>
+    </div>
+    <div class="ticker">
+      <div class="wrap">
+        <a href="#berita">
+          <span class="lbl"><i></i>Kegiatan terbaru</span>
+          <span class="tt">Seminar Nasional PERHAPI Kalsel 2026 <span>· Novotel, bersama DESDM Kalsel</span></span>
+          <time datetime="2026-10-24">24 Okt 2026</time>
+          <span class="go" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · TENTANG -->
+  <section class="sec" id="tentang">
+    <div class="wrap about">
+      <div class="rv">
+        <span class="eyebrow">Tentang kami</span>
+        <p class="big"><b>PERHAPI Kalimantan Selatan</b> adalah pengurus daerah Perhimpunan Ahli Pertambangan Indonesia. Kami menghubungkan industri, kampus, dan pemerintah daerah agar ilmu pertambangan tumbuh bersama keselamatan dan kepedulian lingkungan.</p>
+        <p style="margin-top:28px;display:flex;gap:28px;flex-wrap:wrap"><a class="link" href="struktur.html">Struktur pengurus →</a></p>
+      </div>
+      <ol class="pillars rv">
+        <li><span class="n">01</span><div><h3>Forum ilmiah</h3><p>Seminar nasional dan diskusi teknis tentang teknologi, efisiensi, dan keselamatan tambang.</p></div></li>
+        <li><span class="n">02</span><div><h3>Edukasi &amp; kampus</h3><p>Mendampingi kuliah lapangan mahasiswa teknik pertambangan di lokasi tambang.</p></div></li>
+        <li><span class="n">03</span><div><h3>Lingkungan</h3><p>Ikut dalam aksi lingkungan bersama perusahaan, sekolah, dan masyarakat sekitar tambang.</p></div></li>
+        <li><span class="n">04</span><div><h3>Kolaborasi</h3><p>Menjembatani perusahaan tambang, DESDM Kalsel, dan perguruan tinggi di Banua.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 3 · BERITA -->
+  <section class="sec alt" id="berita">
+    <div class="wrap">
+      <div class="head rv">
+        <div><span class="eyebrow">Berita &amp; kegiatan</span><h2>Cerita terbaru dari lapangan</h2></div>
+        <div class="r">
+          <div class="chips" role="group" aria-label="Saring kategori">
+            <button class="chip" aria-pressed="true" data-f="all">Semua</button>
+            <button class="chip" aria-pressed="false" data-f="seminar">Seminar</button>
+            <button class="chip" aria-pressed="false" data-f="edukasi">Edukasi</button>
+            <button class="chip" aria-pressed="false" data-f="lingkungan">Lingkungan</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="news" id="news">
+        <a class="post feature rv" data-c="seminar" href="#berita">
+          <div class="ph"><div class="im" style="background-image:url(assets/conveyor.jpg);background-position:60% 50%"></div><span class="cat">Seminar</span></div>
+          <span class="meta">24 Okt 2026 · Novotel, Banjarmasin</span>
+          <h3>Seminar Nasional 2026: transformasi teknologi untuk tambang batubara yang efisien, aman, dan berkelanjutan</h3>
+          <p>Bersama DESDM Kalsel, PERHAPI Kalsel menghadirkan praktisi dari tiga perusahaan tambang untuk berbagi penerapan teknologi di lapangan.</p>
+          <ul class="talks">
+            <li>Swivel chute untuk pemuatan batubara yang lebih efisien<span>PT Arutmin Indonesia</span></li>
+            <li>Digital mine surveillance: CCTV, drone, AI, dan control room<span>PT Adaro Indonesia</span></li>
+            <li>Fleet Management System untuk produksi yang lebih aman<span>PT Putra Perkasa Abadi</span></li>
+          </ul>
+        </a>
+        <a class="post rv" data-c="lingkungan" href="#berita">
+          <div class="ph"><div class="im" style="background-image:url(assets/forest.jpg);background-position:30% 40%"></div><span class="cat">Lingkungan</span></div>
+          <span class="meta">25 Jul 2026 · Site Asam-asam</span>
+          <h3>Asam-asam Greenwalk menutup peringatan Hari Lingkungan Hidup 2026</h3>
+        </a>
+        <a class="post rv" data-c="edukasi" href="#berita">
+          <div class="ph"><div class="im" style="background-image:url(assets/hero.jpg);background-position:40% 60%"></div><span class="cat">Edukasi</span></div>
+          <span class="meta">9 Mei 2026 · Site Asam-asam</span>
+          <h3>Kuliah Lapangan II mahasiswa Teknik Pertambangan ULM angkatan 2024</h3>
+        </a>
+        <a class="post rv" data-c="lingkungan" href="#berita">
+          <div class="ph"><div class="im" style="background-image:url(assets/aerial.jpg);background-position:70% 30%"></div><span class="cat">Lingkungan</span></div>
+          <span class="meta">5 Jun 2026 · Kintap</span>
+          <h3>Hari Lingkungan Hidup Sedunia bersama PT Arutmin Tambang Asam-asam dan SMPN 1 Kintap</h3>
+        </a>
+        <a class="post rv" data-c="edukasi" href="#berita">
+          <div class="ph"><div class="im" style="background-image:url(assets/aerial.jpg);background-position:20% 70%"></div><span class="cat">Peringatan</span></div>
+          <span class="meta">28 Sep 2026</span>
+          <h3>Hari Pertambangan &amp; Energi Nasional: momentum refleksi peran sektor tambang</h3>
+        </a>
+        <a class="post rv" data-c="seminar" href="#berita">
+          <div class="ph"><div class="im" style="background-image:url(assets/hero.jpg);background-position:85% 40%"></div><span class="cat">Seminar</span></div>
+          <span class="meta">23 Okt 2026</span>
+          <h3>Undangan Seminar Nasional PERHAPI PD Kalsel 2026 untuk insan pertambangan</h3>
+        </a>
+      </div>
+      <div style="margin-top:44px;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap">
+        <span class="tag-ex">Isi dari Instagram @perhapi.kalsel · foto sementara</span>
+        <a class="link" href="#berita">Semua berita →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · JEDA FOTO: kutipan -->
+  <section class="band quote" aria-label="Kutipan Seminar Nasional 2026">
+    <div class="bg" data-par="0.2"></div>
+    <div class="wrap">
+      <blockquote class="rv">Teknologi paling berdampak ketika berjalan bersama keselamatan dan kolaborasi.
+        <cite>PERHAPI Kalsel · Seminar Nasional 2026</cite>
+      </blockquote>
+      <div class="facts rv">
+        <div><b>3</b><span>materi teknologi tambang</span></div>
+        <div><b>3</b><span>perusahaan narasumber</span></div>
+        <div><b>24.10</b><span>Seminar Nasional 2026</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · AGENDA -->
+  <section class="sec" id="agenda">
+    <div class="wrap">
+      <div class="head rv">
+        <div><span class="eyebrow">Agenda</span><h2>Jadwal kegiatan</h2></div>
+        <div class="tabs" role="tablist" aria-label="Pilih agenda">
+          <button class="tab" role="tab" id="t-up" aria-selected="true" aria-controls="p-up">Akan datang</button>
+          <button class="tab" role="tab" id="t-past" aria-selected="false" aria-controls="p-past" tabindex="-1">Selesai</button>
+        </div>
+      </div>
+      <div class="panel" id="p-up" role="tabpanel" aria-labelledby="t-up">
+        <ul class="agenda">
+          <li class="ev"><time><b>28</b><span>Nov 2026</span></time><div><h3>FGD reklamasi dan pascatambang</h3><p>Banjarbaru · 09.00 WITA</p></div><span class="badge">Pendaftaran dibuka</span></li>
+          <li class="ev"><time><b>06</b><span>Des 2026</span></time><div><h3>Pelatihan Pengawas Operasional Pertama (POP)</h3><p>Banjarmasin · 3 hari</p></div><span class="badge">Kuota terbatas</span></li>
+          <li class="ev"><time><b>20</b><span>Jan 2027</span></time><div><h3>Rapat kerja pengurus 2027</h3><p>Sekretariat PERHAPI Kalsel</p></div><span class="badge done">Internal</span></li>
+        </ul>
+        <p style="margin-top:18px"><span class="tag-ex">Contoh agenda</span></p>
+      </div>
+      <div class="panel" id="p-past" role="tabpanel" aria-labelledby="t-past" hidden>
+        <ul class="agenda">
+          <li class="ev"><time><b>24</b><span>Okt 2026</span></time><div><h3>Seminar Nasional PERHAPI Kalsel 2026</h3><p>Novotel · 08.30–12.30 WITA · bersama DESDM Kalsel</p></div><span class="badge done">Selesai</span></li>
+          <li class="ev"><time><b>25</b><span>Jul 2026</span></time><div><h3>Asam-asam Greenwalk</h3><p>PT Arutmin Indonesia Site Asam-asam</p></div><span class="badge done">Selesai</span></li>
+          <li class="ev"><time><b>05</b><span>Jun 2026</span></time><div><h3>Hari Lingkungan Hidup Sedunia</h3><p>Bersama PT Arutmin Tambang Asam-asam dan SMPN 1 Kintap</p></div><span class="badge done">Selesai</span></li>
+          <li class="ev"><time><b>09</b><span>Mei 2026</span></time><div><h3>Kuliah Lapangan II Teknik Pertambangan ULM</h3><p>PT Arutmin Indonesia Site Asam-asam</p></div><span class="badge done">Selesai</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · PROGRAM -->
+  <section class="sec alt" id="program">
+    <div class="wrap">
+      <div class="head rv">
+        <div><span class="eyebrow">Program</span><h2>Apa yang kami kerjakan</h2></div>
+      </div>
+      <div class="prog">
+        <div class="pcard rv"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 19V5m0 14h16M8 15l3-4 3 2 5-6"/></svg></span><h3>Seminar &amp; forum teknis</h3><p>Ruang berbagi teknologi dan praktik terbaik antarperusahaan tambang.</p></div>
+        <div class="pcard rv"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M3 9l9-5 9 5-9 5-9-5Zm4 2.5V16c0 1.5 2.5 3 5 3s5-1.5 5-3v-4.5"/></svg></span><h3>Kampus &amp; mahasiswa</h3><p>Kuliah lapangan, mentoring, dan jembatan menuju dunia kerja tambang.</p></div>
+        <div class="pcard rv"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 21V11m0 0c0-4 3-7 8-7 0 5-3 8-8 7Zm0 3c0-3-2-5-6-5 0 3 2 5 6 5Z"/></svg></span><h3>Lingkungan &amp; sosial</h3><p>Aksi lingkungan dan edukasi tambang bersama sekolah serta masyarakat.</p></div>
+        <div class="pcard rv"><span class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 3l8 4v5c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V7l8-4Z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg></span><h3>Kompetensi &amp; K3</h3><p>Pelatihan keselamatan dan pengembangan kompetensi insan tambang.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · JEDA FOTO: GABUNG -->
+  <section class="band join" id="gabung">
+    <div class="bg" data-par="0.18"></div>
+    <div class="wrap join-in">
+      <div class="rv">
+        <span class="eyebrow">Keanggotaan</span>
+        <h2>Bergabung dengan PERHAPI Kalsel</h2>
+        <p class="sub">Terbuka untuk profesional tambang, akademisi, dan mahasiswa. Isi formulir singkat, pengurus akan menghubungimu lewat email.</p>
+        <ol class="steps">
+          <li><div><b>Isi formulir</b>Pilih daftar sebagai anggota atau calon pengurus.</div></li>
+          <li><div><b>Email masuk ke pengurus</b>Data tercatat juga di panel admin.</div></li>
+          <li><div><b>Balasan lewat email</b>Pengurus menghubungi untuk kelengkapan berkas dan iuran.</div></li>
+        </ol>
+      </div>
+      <div class="formcard rv">
+        <form id="joinForm" novalidate>
+          <div class="seg" role="radiogroup" aria-label="Jenis pendaftaran">
+            <input type="radio" name="jenis" id="j-a" value="Anggota" checked><label for="j-a">Anggota</label>
+            <input type="radio" name="jenis" id="j-p" value="Pengurus"><label for="j-p">Calon pengurus</label>
+          </div>
+          <div class="row2">
+            <div class="f"><label for="nama">Nama lengkap</label><input id="nama" autocomplete="name"><span class="err"></span></div>
+            <div class="f"><label for="email">Email</label><input id="email" type="email" autocomplete="email"><span class="err"></span></div>
+          </div>
+          <div class="row2">
+            <div class="f"><label for="instansi">Perusahaan / kampus</label><input id="instansi" autocomplete="organization"><span class="err"></span></div>
+            <div class="f"><label for="wa">Nomor WhatsApp (opsional)</label><input id="wa" inputmode="tel" autocomplete="tel" placeholder="08xx"><span class="err"></span></div>
+          </div>
+          <div class="f"><label for="bidang">Bidang</label>
+            <select id="bidang"><option value="">Pilih bidang</option><option>Eksplorasi &amp; geologi</option><option>Perencanaan &amp; operasi tambang</option><option>Geoteknik &amp; hidrogeologi</option><option>Pengolahan</option><option>K3 &amp; lingkungan</option><option>Comdev / PPM</option><option>Akademisi</option><option>Mahasiswa</option><option>Lainnya</option></select><span class="err"></span></div>
+          <div class="f"><label for="pesan">Pesan untuk pengurus (opsional)</label><textarea id="pesan"></textarea></div>
+          <input class="hp" type="text" id="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <label class="consent" id="consentWrap" for="setuju"><input type="checkbox" id="setuju">Saya setuju data ini dipakai pengurus PERHAPI Kalsel untuk proses pendaftaran.</label>
+          <button class="btn btn-dark" type="submit">Kirim pendaftaran <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        </form>
+        <div class="done" id="done" role="status" aria-live="polite" tabindex="-1">
+          <span class="ok"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+          <h3>Data sudah lengkap</h3>
+          <p>Ini masih prototipe, jadi belum ada email yang terkirim. Di versi live, pengurus menerima email dengan subjek:</p>
+          <code id="subj"></code>
+          <button class="btn btn-dark" type="button" id="ulang" style="justify-self:start">Isi ulang formulir</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · MITRA -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="head rv">
+        <div><span class="eyebrow">Mitra kegiatan</span><h2>Bersama industri, pemerintah, dan kampus</h2></div>
+        <span class="tag-ex">Logo Adaro dan PPA menyusul</span>
+      </div>
+      <div class="partners rv">
+        <div class="p"><div class="lg"><img src="assets/partners/kalsel.png" alt="Lambang Provinsi Kalimantan Selatan"></div><small>Dinas ESDM Provinsi Kalsel</small></div>
+        <div class="p"><div class="lg"><img src="assets/partners/arutmin.png" alt="Logo PT Arutmin Indonesia"></div><small>PT Arutmin Indonesia</small></div>
+        <div class="p"><div class="lg"><span class="wm">ADARO</span></div><small>PT Adaro Indonesia</small></div>
+        <div class="p"><div class="lg"><span class="wm">PPA</span></div><small>PT Putra Perkasa Abadi</small></div>
+        <div class="p"><div class="lg"><img src="assets/partners/ulm.png" alt="Logo Universitas Lambung Mangkurat"></div><small>Universitas Lambung Mangkurat</small></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- 9 · FOOTER (foto) -->
+<footer class="band" id="kontak">
+  <div class="bg" data-par="0.15"></div>
+  <div class="wrap">
+    <div class="foot-cta">
+      <h2>Ingin bergabung atau bermitra dengan kami?</h2>
+      <a class="btn btn-accent" href="#gabung">Daftar lewat formulir <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+    <div class="foot">
+      <div>
+        <a class="brand" href="#top"><span class="mark"><img src="assets/logo-perhapi.png" alt="Logo PERHAPI Kalsel"></span><span><b>PERHAPI</b><small>Pengda Kalsel</small></span></a>
+        <p class="about-t">Perhimpunan Ahli Pertambangan Indonesia, Pengurus Daerah Kalimantan Selatan.</p>
+        <div class="social">
+          <a class="soc" href="https://instagram.com/perhapi.kalsel" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".7" fill="currentColor"/></svg>Instagram</a>
+          <a class="soc" href="https://www.youtube.com/@perhapikalsel" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="5.5" width="19" height="13" rx="4"/><path d="M10 9.2v5.6l4.8-2.8z" fill="currentColor"/></svg>YouTube</a>
+        </div>
+      </div>
+      <div><h4>Sekretariat</h4>
+        <address>Grand Palace Park, No. C1<br>Jln. A. Yani Km. 32<br>Kota Banjarbaru<br>Kalimantan Selatan 70714</address>
+      </div>
+      <div><h4>Kontak</h4><ul><li>[email sekretariat]</li><li>Pendaftaran dan pertanyaan lewat email.</li></ul></div>
+      <div><h4>Halaman</h4><ul><li><a href="#tentang">Tentang</a></li><li><a href="struktur.html">Struktur</a></li><li><a href="#berita">Berita</a></li><li><a href="#agenda">Agenda</a></li><li><a href="#gabung">Keanggotaan</a></li></ul></div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 PERHAPI Kalimantan Selatan · Foto: Unsplash</span>
+      <a class="credit" href="https://instagram.com/ur.chillguy" target="_blank" rel="noopener"><i></i>Dibuat oleh ur.chillguy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
